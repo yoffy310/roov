@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207085921) do
+ActiveRecord::Schema.define(version: 20160207091329) do
 
   create_table "rooms", force: :cascade do |t|
     t.text     "room_name",   limit: 65535
@@ -43,6 +43,10 @@ ActiveRecord::Schema.define(version: 20160207085921) do
     t.integer  "age",                    limit: 4
     t.string   "housemate",              limit: 255
     t.string   "occupation",             limit: 255
+    t.string   "avatar_file_name",       limit: 255
+    t.string   "avatar_content_type",    limit: 255
+    t.integer  "avatar_file_size",       limit: 4
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
