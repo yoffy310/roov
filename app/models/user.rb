@@ -11,5 +11,7 @@ class User < ActiveRecord::Base
                                       content_type: ["image/jpg","image/jpeg","image/png"]
 
 belongs_to :gender
+belongs_to :housemate
+belongs_to :occupation
 
 end
