@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160208063604) do
+ActiveRecord::Schema.define(version: 20160211101202) do
+
+  create_table "genders", force: :cascade do |t|
+    t.string   "gender",     limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "housemates", force: :cascade do |t|
+    t.string   "housemate",  limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "occupations", force: :cascade do |t|
+    t.string   "occupation", limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rooms", force: :cascade do |t|
     t.text     "room_name",   limit: 65535
