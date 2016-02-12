@@ -7,7 +7,9 @@
 
   <div class="field">
     <%= f.label :プロフィール画像 %><br />
-    <%= f.file_field :avatar, autofocus: true %>
+    <%= f.file_field :image, autofocus: true %>
+    <%= image_tag @user.image.thumb.url if @user.image? %>
+    <%= f.hidden_field :image_cache %>
   </div>
 
   <div class="field">
