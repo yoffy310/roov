@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   belongs_to :housemates
   belongs_to :occupations
 
-  # mount_uploader :image, ImageUploader
+  mount_uploader :image, ImageUploader
 
 def age
   date_format = "%Y%m%d"
