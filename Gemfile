@@ -52,6 +52,8 @@ group :development do
   gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
   gem 'twitter-bootstrap-rails' # Bootstrapの本体
   gem 'bootstrap-material-design', '0.1.4'
+  gem 'carrierwave'
+  gem 'rmagick'
 
 end
 
