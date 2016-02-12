@@ -10,8 +10,8 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar,
                                       content_type: ["image/jpg","image/jpeg","image/png"]
 
-belongs_to :gender
-belongs_to :housemate
-belongs_to :occupation
+belongs_to :genders
+belongs_to :housemates
+belongs_to :occupations
 
 end
