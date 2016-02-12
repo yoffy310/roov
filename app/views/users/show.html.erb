@@ -1,0 +1,35 @@
+<%= @user.nickname %>さんのページです
+<%= link_to 'プロフィール編集', edit_user_path(current_user) %>
+
+  <h2>会員情報</h2>
+  <table>
+  <tbody>
+  <tr>
+    <th>項目</th>
+    <th>登録内容</th>
+  </tr>
+  <tr>
+    <td>ニックネーム</td>
+    <td><%= current_user.nickname %></td>
+  </tr>
+  <tr>
+    <td>年齢</td>
+    <td><%= current_user.age %>歳</td>
+  </tr>
+  <tr>
+    <td>性別</td>
+    <td><%= current_user.sex %></td>
+  </tr>
+  <tr>
+    <td>ハウスメイト</td>
+    <td><%= current_user.housemate %></td>
+  </tr>
+  <tr>
+    <td>職業</td>
+    <td><%= current_user.occupation %></td>
+  </tr>
+  <tr>
+  <td>プロフィール画像</td>
+  <td><%= current_user.avatar %></td>
+  </tr>
+  </tbody>
