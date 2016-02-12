@@ -14,4 +14,9 @@ belongs_to :genders
 belongs_to :housemates
 belongs_to :occupations
 
+def age
+  date_format = "%Y%m%d"
+  (Date.today.strftime(date_format).to_i - birth_day.strftime(date_format).to_i) / 10000
+end
+
 end
