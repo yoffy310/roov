@@ -10,9 +10,11 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar,
                                       content_type: ["image/jpg","image/jpeg","image/png"]
 
-belongs_to :genders
-belongs_to :housemates
-belongs_to :occupations
+  belongs_to :genders
+  belongs_to :housemates
+  belongs_to :occupations
+
+  # mount_uploader :image, ImageUploader
 
 def age
   date_format = "%Y%m%d"
