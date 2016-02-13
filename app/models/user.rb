@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   belongs_to :genders
   belongs_to :housemates
   belongs_to :occupations
+  has_many :rooms
 
   mount_uploader :image, ImageUploader
 
