@@ -54,6 +54,7 @@ group :development do
   gem 'bootstrap-material-design', '0.1.4'
   gem 'carrierwave'
   gem 'rmagick'
+  gem 'bullet'
 
 end
 
